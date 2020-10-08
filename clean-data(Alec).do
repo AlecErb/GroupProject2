@@ -62,3 +62,11 @@ tabulate location_name
 
 *Drop observation if offender_race = unkown (Deletes 284 observations)
 drop if offender_race == "Unknown"
+
+import delimited "/Users/edchen/Desktop/Fall 2020/ECON 4651/Group Assignments/Group Assignment 2/Hate Crime Offense Name and Bias.csv"
+
+*Bar Chart of Frequency of Hate Crimes
+graph bar (mean) aggravatedassault (mean) destructionofproperty (mean) intimidation (mean) robbery (mean) simpleassault
+
+*Bar Chart of Frequency of Bias 
+graph bar (mean) antiasian (mean) antiblack (mean) antigay (mean) antihispaniclatino (mean) antijewish (mean) antilgbt (mean) antiotherrace (mean) antiwhite
